@@ -9,9 +9,13 @@ class Node {
     }
 }
 
+
+
 public class SinglyLinkedList {
     private Node head;
 
+
+    //Insert At a beginning
     public void insertAtBeginning(int data) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -22,6 +26,7 @@ public class SinglyLinkedList {
         head = newNode;
     }
 
+    //insert at a End
     public void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if(head == null){
@@ -35,6 +40,8 @@ public class SinglyLinkedList {
         }
         curr.next = newNode;
     }
+
+    //insert At a postion
     public void insertAtPostion(int data,int pos) {
         Node newNode = new Node(data);
         if (head == null) {
@@ -71,6 +78,8 @@ public class SinglyLinkedList {
     }
 
     //delete Opertion
+
+    //delete at a First
     public void deleteFirst() {
         if (head == null) {
             System.out.println("List is empty.");
@@ -79,6 +88,8 @@ public class SinglyLinkedList {
         head = head.next;
     }
 
+
+    //delete at End
     public void deleteAtend() {
         if (head == null) {
             System.out.println("List is empty.");
@@ -90,7 +101,8 @@ public class SinglyLinkedList {
         }
         curr.next = null;
     }
-
+    
+    //delete at Postion
     public void deleteAtPosition(int pos) {
         if (head == null) {
             System.out.println("List is empty.");
