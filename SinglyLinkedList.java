@@ -147,6 +147,6 @@ public class SinglyLinkedList {
         list.deleteAtPosition(0);
         list.display();
 
-        // list.deleteByValue(50); // Attempting to delete a non-existent value
+        // list.deleteByValue(50); 
     }
 }
